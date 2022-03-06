@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LinkedList;
+using System;
+using System.Collections.Generic;
 
 namespace LinkedListSolu
 {
@@ -9,6 +11,12 @@ namespace LinkedListSolu
             //int Choice,data,p;
 
             Console.WriteLine("Welcome to Linked List operation");
+
+            LinkList list = new LinkList();
+            list.Add(56);
+            list.Add(30);
+            list.Add(70);
+            list.Display();
         }
     }
 }
