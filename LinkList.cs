@@ -96,5 +96,11 @@ namespace LinkedList
                 p = p.Next;
             p.Next = temp;
         }
+        public void InsertAtBegining(int data)
+        {
+            Node temp = new Node(data);
+            temp.Next = head;
+            head = temp;
+        }
     }
 }

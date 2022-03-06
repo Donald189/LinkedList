@@ -39,8 +39,13 @@ namespace LinkedListSolu
                     case 2:
                         list.Display();
                         break;
+                    case 3:
+                        Console.WriteLine("Enter the element to searched");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        list.InsertAtBegining(data);
+                        break;
                     default:
-                        Console.WriteLine("wrong choise");
+                        Console.WriteLine("wrong choice");
                         break;
 
                 }
