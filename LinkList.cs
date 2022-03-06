@@ -81,5 +81,20 @@ namespace LinkedList
             Console.WriteLine("Inserted value is " + head);
             return head;
         }
+        public void InsertAtLast(int data)
+        {
+            Node p;
+            Node temp = new Node(data);
+
+            if (head == null)
+            {
+                head = temp;
+                return;
+            }
+            p = head;
+            while (p.Next != null)
+                p = p.Next;
+            p.Next = temp;
+        }
     }
 }
